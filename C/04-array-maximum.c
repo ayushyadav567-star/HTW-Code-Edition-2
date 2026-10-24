@@ -4,6 +4,7 @@ int main(void) {
     int n;
     int values[100];
     int maximum = 0;
+    int N_max = -(__INT_MAX__);
 
     printf("How many integers (1-100)? ");
     if (scanf("%d", &n) != 1 || n < 1 || n > 100) {
@@ -20,9 +21,24 @@ int main(void) {
     }
 
     for (int i = 0; i < n; i++) {
-        if (values[i] > maximum) {
+        if (values[i] < 0)
+        {
+            
+            if(values[i] > N_max)
+            {
+                N_max = values[i];
+            }
+            maximum = N_max;
+
+        }
+        else{
+            if (values[i] > maximum) {
             maximum = values[i];
         }
+    
+        }
+        
+        
     }
 
     printf("Maximum = %d\n", maximum);

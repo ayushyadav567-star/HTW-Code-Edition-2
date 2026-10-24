@@ -1,0 +1,15 @@
+//This is the change i made 
+ int N_max = -(__INT_MAX__);
+if (values[i] < 0)
+        {
+            
+            if(values[i] > N_max)
+            {
+                N_max = values[i];
+            }
+            maximum = N_max;
+
+        }
+I made a negative maximum variable by multiplying the maximum positive integer with negative
+And i started comparing with each values
+

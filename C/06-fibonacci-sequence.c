@@ -12,13 +12,14 @@ int main(void) {
 
     for (int i = 0; i < terms; i++) {
         printf("%d", first);
+        int next = first + second;
+        first = second;
+        second = next;
         if (i + 1 < terms) {
             printf(" ");
         }
 
-        int next = first + second;
-        first = second;
-        second = first;
+        
     }
     printf("\n");
 

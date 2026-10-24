@@ -1,0 +1,7 @@
+//Changes I made in fibonacci - sequence
+int next = first + second;
+first = second;
+second = next;
+
+I computed the next digit in fibbonacci, and assigned it to second.
+The second is already assigned to first.
